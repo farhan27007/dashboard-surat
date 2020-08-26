@@ -3,11 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Edit surat masuk</title>
+  <title>Tambah surat</title>
   <link rel="stylesheet" href="assets/css/bootstrap.css">
   <link rel="stylesheet" href="assets/vendors/simple-datatables/style.css">
   <link rel="stylesheet" href="assets/vendors/datepicker/datepicker.min.css">
   <link rel="stylesheet" href="assets/css/app.css">
+  <link rel="stylesheet" href="assets/vendors/choices.js/choices.min.css" />
 </head>
 <body>
   <div id="app">
@@ -19,15 +20,15 @@
         <div class="page-title d-flex">
           <i data-feather="plus" class="menu-sub-icon"></i>
           <div class="d-block">
-           <h3>Tambah surat masuk</h3>
-           <p class="text-subtitle text-muted">Tambah surat masuk</p>
+           <h3>Tambah surat</h3>
+           <p class="text-subtitle text-muted">Tambah surat</p>
          </div>
        </div>
 
        <section class="section">
         <div class="card">
           <div class="card-header">
-            <a href="daftar-surat-masuk.php" class="btn btn-secondary float-right">
+            <a href="daftar-surat-keluar.php" class="btn btn-secondary float-right">
               <i  data-feather="arrow-left"></i>&nbsp;Back
             </a>
           </div>
@@ -70,7 +71,7 @@
                       <div class="input-group date" data-date-format="dd.mm.yyyy">
                         <input  type="text" class="form-control mb-0" placeholder="Tanggal surat...">
                         <div class="input-group-addon">
-                          <p class="date-icon">></p>
+                          <p class="date-icon mt-2">></p>
                         </div>
                       </div>
                     </div>
@@ -99,33 +100,40 @@
                   </div>
 
                   <div class="col-lg-6">
-                    <div class="form-group">
-                      <label>Diteruskan kepada :</label>
-                      <input type="text" class="form-control" placeholder="Diteruskan kepada..">
-                    </div>
+                   <div class="form-group">
+                    <label>Diteruskan kepada :</label>
+                    <select class="choices form-select multiple-remove" multiple="multiple">
+                      <optgroup label="Diteruskan kepada :">
+                        <option selected>User 1</option>
+                        <option>User 2</option>
+                        <option>User 3</option>
+                      </optgroup>
+                     
+                    </select>
                   </div>
-
-                  <div class="col-lg-12">
-                    <div class="form-group">
-                      <label>Unggah berkas scan surat:</label><br>
-                      <input type="file" class="form-control-file loking" placeholder="Unggah scan surat..">
-                    </div>
-                  </div>
-
-                  <div class="col-12 d-flex justify-content-end">
-                    <button type="submit" class="btn btn-primary btn-save mr-1 mb-1">
-                      <i data-feather="save"></i>&nbsp;<span>SIMPAN</span>
-                    </button>
-                  </div>
-
                 </div>
+
+                <div class="col-lg-12">
+                  <div class="form-group">
+                    <label>Unggah berkas scan surat:</label><br>
+                    <input type="file" class="form-control-file loking" placeholder="Unggah scan surat..">
+                  </div>
+                </div>
+
+                <div class="col-12 d-flex justify-content-end">
+                  <button type="submit" class="btn btn-primary btn-save mr-1 mb-1">
+                    <i data-feather="save"></i>&nbsp;<span>SIMPAN</span>
+                  </button>
+                </div>
+
               </div>
-            </form>
-          </div>
+            </div>
+          </form>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
   </div>
+</div>
 </div>
 
 
@@ -136,6 +144,8 @@
 <script src="assets/js/app.js"></script>
 <script src="assets/vendors/datepicker/jquery.min.js"></script>
 <script src="assets/vendors/datepicker/datepicker.min.js"></script>
+<!-- Include Choices JavaScript -->
+<script src="assets/vendors/choices.js/choices.min.js"></script>
 <script src="assets/js/main.js"></script>
 <script>
   $('.input-group.date').datepicker({format: "dd-mm-yyyy"}); 

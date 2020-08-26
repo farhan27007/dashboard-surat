@@ -20,25 +20,13 @@
                             <i data-feather="home" width="20"></i> 
                             <span>Dashboard</span>
                         </a>
-
                     </li>
 
-
-                    <li class="sidebar-item  has-sub">
-                        <a href="#" class='sidebar-link'>
+                    <li class="sidebar-item">
+                        <a href="daftar-surat-masuk.php" class='sidebar-link'>
                             <i data-feather="mail" width="20"></i> 
                             <span>Surat masuk</span>
                         </a>
-                        <ul class="submenu ">
-
-                            <li>
-                                <a href="daftar-surat-masuk.php">Daftar surat masuk</a>
-                            </li>
-                            <li>
-                                <a href="input-surat-masuk.php">Tambah surat masuk</a>
-                            </li>
-
-                        </ul>
                     </li>
 
                     <li class="sidebar-item  has-sub">
@@ -46,16 +34,23 @@
                             <i data-feather="inbox" width="20"></i> 
                             <span>Surat keluar</span>
                         </a>
-                        <ul class="submenu ">
+                        <ul class="submenu">
 
                             <li>
                                 <a href="daftar-surat-keluar.php">Daftar surat keluar</a>
                             </li>
                             <li>
-                                <a href="input-surat-keluar.php">Tambah surat keluar</a>
+                                <a href="input-surat-keluar.php">Tambah surat</a>
                             </li>
 
                         </ul>
+                    </li>
+
+                    <li class="sidebar-item">
+                        <a href="daftar-disposisi.php" class='sidebar-link'>
+                            <i data-feather="archive" width="20"></i> 
+                            <span>Disposisi</span>
+                        </a>
                     </li>
 
                     <li class="sidebar-item  has-sub">
@@ -80,7 +75,6 @@
                             <i data-feather="user" width="20"></i> 
                             <span>Profile Saya</span>
                         </a>
-
                     </li>
 
                     <li class="sidebar-item">

@@ -32,11 +32,27 @@
 .breadcrumb-header .breadcrumb {
   justify-content: flex-end;
 }
-
+.dif-color {
+  color: #158467;
+}
 .alert.alert-dismissible .close:focus, .custom-switch .custom-control-label:focus, .dropdown .dropdown-toggle:focus, .dropleft .dropdown-toggle:focus, .dropright .dropdown-toggle:focus, .dropup .dropdown-toggle:focus, .list-group button.list-group-item:focus, .modal .modal-content .modal-header .close:active, .modal .modal-content .modal-header .close:focus, .modal .modal-content .modal-header .close:hover, .navbar-components-wrapper .navbar .navbar-container.navbar-dark .navbar-toggler:focus, .navbar-components-wrapper .navbar .navbar-container.navbar-light .navbar-toggler:focus, .toast .toast-header .close:active, .toast .toast-header .close:focus, a:focus {
   outline: 0;
 }
-
+.alert-success {
+  background-color: #39DA8A;
+  color: #fff;
+  box-shadow: 1px 2px 9px rgba(57, 218, 138, 0.3);
+}
+.alert-primary {
+  background-color: #029eff;
+  color: #fff;
+  box-shadow: 1px 2px 9px rgba(2, 158, 255, 0.3);
+}
+.alert-danger {
+  background-color: #f55260;
+  color: #fff;
+  box-shadow: 1px 2px 9px rgba(245, 82, 96, 0.3);
+}
 section .section-title:after {
   width: 70px;
   height: 2px;
@@ -784,7 +800,11 @@ footer {
   border: none;
 }
 .card .card-header h4 {
+  letter-spacing: 0.4px;
   font-size: 1.2rem;
+  color: #293b5f;
+  font-weight: 600;
+  padding-bottom: 6px;
 }
 .card .card-header ~ .card-body {
   padding-top: 0;
@@ -1046,11 +1066,14 @@ footer {
   color:#293b5f;
 }
 .btn-search-surat {
-    padding-top:10px;
+  padding-top:10px;
 }
 /* halaman list-produk-hukum */
 
 /* halaman input-list-produk-hukum */
+.form-control {
+  padding: 12px .6rem;
+}
 .form-control:focus,.form-control:active {
   border: 1px solid #158467;
   -webkit-box-shadow: 0 25px 70px rgba(0, 0, 0, 0.07);
@@ -1185,6 +1208,22 @@ footer {
   letter-spacing: 0.2px;
 }
 /* custom-card-top-data */
+
+/* penambahan role user */
+.card-role-user {
+  border-radius: .25rem !important;
+}
+.dropdown-role-user,.dropdown-role-user:hover,.dropdown-role-user:focus {
+  color: #293b5f;
+  font-size: 17px;
+  font-weight: 600;
+  letter-spacing: 0.1px;
+}
+.label-role-user {
+  font-family: Raleway !important;
+  letter-spacing: 0.3px;
+}
+/* penambahan role user */
 
 /* cs-media-center */
 @media (max-width: 767px) {

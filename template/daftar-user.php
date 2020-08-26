@@ -1,8 +1,8 @@
 <section class="section">
     <div class="card">
         <div class="card-header">
-            <a href="input-new-user.php" class="btn btn-success">
-                <i  data-feather="user-plus"></i>&nbsp;Add New User
+            <a href="input-new-user.php" class="btn btn-success float-right">
+                <i  data-feather="user-plus"></i>&nbsp;Tambah user
             </a>
         </div>
         <div class="card-body">
